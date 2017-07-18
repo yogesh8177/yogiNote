@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="yogispark.yoginote.Fragments.CreateTask">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/enter_task_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_task_label" />
+
+    <EditText
+        android:id="@+id/task_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/enter_task_label"/>
+
+    <TextView
+        android:id="@+id/task_expiry_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_expiry_label"
+        android:layout_below="@+id/task_details"/>
+
+    <DatePicker
+        android:id="@+id/expiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_expiry_label"/>
+
+
+    <Switch
+        android:id="@+id/repeat_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiryDate"
+        android:text="@string/task_repeat_label"
+        android:layout_alignParentRight="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_details_view"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task details"/>
+
+            <TextView
+                android:id="@+id/task_expiry_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry"
+                android:layout_below="@+id/task_details_view"/>
+
+            <Switch
+                android:id="@+id/finish_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finished? "
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
